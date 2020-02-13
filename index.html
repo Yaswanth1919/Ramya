@@ -17,6 +17,8 @@ $(document).ready(function(){
      anima();
   });
   function anima(){
+  $(".im").animate({height: '450px', width: '150px'},3000);
+   $(".im").animate({height: '400px', width: '100px'},3000);
   $("#im").animate({height: '150px', width: '150px'},3000);
    $("#im").animate({height: '100px', width: '100px'},3000);
   $("#txt").animate({fontSize:'3rem'},1000);
@@ -31,7 +33,7 @@ $(document).ready(function(){
 <center class="content"><h1 class="hbd">Happy Birthday</h1>
 <h2 class="name">Ramya</h2>
 	<img src="images/Ramya.jpg" alt="Ramya" height="400px" width="400px" class="im"><br><br><br><br><br>
-<img src="images/birthday.png" height="100px" width="100px" class="im">
+<img src="images/birthday.png" height="100px" width="100px" id="im">
 	
 </center>
 </div>

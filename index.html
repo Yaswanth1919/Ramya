@@ -1,0 +1,40 @@
+<html>
+<head>
+<title>Happy Birthday</title>
+<link href="https://fonts.googleapis.com/css?family=Galada|Sacramento&display=swap" rel="stylesheet">
+<link href="css/styles.css" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+
+$(document).ready(function(){
+  $(".giftbox").click(function(){
+    $(".gift").addClass("add");
+	$(".rem").addClass("remove");
+	$(".content").addClass("add");
+  });
+  $("txt").ready(function(){
+     anima();
+  });
+  function anima(){
+  $("#im").animate({height: '150px', width: '150px'},3000);
+   $("#im").animate({height: '100px', width: '100px'},3000);
+  $("#txt").animate({fontSize:'3rem'},1000);
+  $("#txt").animate({fontSize:'2rem'},1000,anima);
+  }
+ });
+</script>
+</head>
+<body>
+<div  align="center"> 
+<center class="rem" ><p id="txt">Click On The Box</p></center>
+<center class="content"><h1 class="hbd">Happy Birthday</h1>
+<h2 class="name">Ramya</h2>
+<img src="images/birthday.png" height="100px" width="100px" id="im">
+</center>
+</div>
+<div class="div1">
+<center><img src="images/giftbox.png" class="giftbox rem"></center>
+<center><img src="images/gift.png" class="gift"></center>
+</div>
+</body>
+</html>
